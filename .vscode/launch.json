@@ -1,0 +1,14 @@
+{
+    // 点右上角 ▶ 或按 Ctrl+F5 / F5 都能跑当前打开的这个文件
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "运行当前 Python 文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

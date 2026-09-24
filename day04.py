@@ -1,0 +1,6 @@
+h=input("身高（米）：")
+w=input("体重（公斤）：")
+h=float(h)
+w=float(w)
+bmi=w/(h*h)
+print(f"大金的bmi是{bmi:.2f}")

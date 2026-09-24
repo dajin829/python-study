@@ -1,0 +1,5 @@
+name=input("你叫什么名字？\n")
+print(f"你好,{name}\n")
+age=input("你今年多少岁\n")
+birthyear = 2026-int(age)
+print(f"你{birthyear}出生的呀")
