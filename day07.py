@@ -1,0 +1,14 @@
+grade=input("你的成绩是多少？")
+grade=int(grade)
+if(grade>=90 and grade<=100):
+    print(f"你的成绩是{grade},评级是A！")
+if(grade>=80 and grade<90):
+    print(f"你的成绩是{grade},评级是B！")
+if(grade>=70 and grade<80):
+    print(f"你的成绩是{grade},评级是C！")
+if(grade>=60 and grade<70):
+    print(f"你的成绩是{grade},评级是D！")
+if(grade<60 and grade>=0):
+    print(f"你的成绩是{grade},评级是不及格！")
+if(grade>100 or grade<0):
+    print(f"你的成绩是{grade},输入有误！")

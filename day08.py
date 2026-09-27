@@ -1,0 +1,10 @@
+year=input("请告诉我年份")
+year=int(year)
+if(year%400==0):
+    print(f"{year}是世纪闰年")
+elif(year%100==0):
+    print(f"{year}不是闰年")
+elif(year%4==0):
+    print(f"{year}是闰年")
+else:
+    print(f"{year}不是闰年")
