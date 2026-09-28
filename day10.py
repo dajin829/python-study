@@ -1,0 +1,9 @@
+fruit=["苹果","橙子","香蕉","葡萄","芒果"]
+print(len(fruit))
+print(fruit[0])
+fruit.append("西瓜")
+print(fruit)
+print(fruit[-1])
+print(fruit[-2])
+print(fruit[0:5])
+print(fruit[6])
