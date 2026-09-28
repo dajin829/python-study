@@ -1,0 +1,16 @@
+# Python 运行产生的缓存文件，不要提交
+__pycache__/
+*.pyc
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# VS Code 个人配置
+.vscode/settings.json
+.vscode/launch.json
+
+# 系统垃圾文件
+.DS_Store
+Thumbs.db
