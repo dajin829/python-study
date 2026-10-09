@@ -1,4 +1,4 @@
-fruit=["苹果","橙子","香蕉","葡萄","芒果"]
+fruit=["苹果","橙子","香蕉","葡萄","芒果"]#列表
 print(len(fruit))
 print(fruit[0])
 fruit.append("西瓜")
