@@ -16,3 +16,6 @@ env/
 Thumbs.db
 __pycache__/
 weather.txt
+
+# 老师代写的完整参考版：留着他卡住时对照，不提交
+project1/main_参考版*.py
