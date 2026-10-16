@@ -89,7 +89,7 @@ def main():
     while True:
         choice=showmenu()
         if(choice=="1"):
-            city=input("请输入你想查询的城市")
+            city=input("请输入你想查询的城市：")
             info=search(city)
             if(info):
                 record(info)
