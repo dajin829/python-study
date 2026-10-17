@@ -19,3 +19,6 @@ weather.txt
 
 # 老师代写的完整参考版：留着他卡住时对照，不提交
 project1/main_参考版*.py
+
+# API 密钥文件：里面是花钱的钥匙，绝对不能提交
+config.py
