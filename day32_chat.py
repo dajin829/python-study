@@ -70,7 +70,7 @@ def main():
         a=ask(history)
         if a:
             print(a)
-            history.append({"content":a,"role":"assistant"})#要把每一次回答也给放进history，不然大模型会忘
+            history.append({"content":a,"role":"assistant"})#要把每一次回答也给放进history，不然大模型会忘；history 是列表，append 加进去的是一整个新的字典，不是键。键是字典里的事，跟列表没关系
         # 第 2 步：空输入 → continue；输入 q（不分大小写）→ break
         
 
