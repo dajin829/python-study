@@ -14,3 +14,5 @@ def home():
 @app.get("/result",response_class=HTMLResponse)
 def result(city:str,question:str):
     return f"<h1>"
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000)
