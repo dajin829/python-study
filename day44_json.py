@@ -18,6 +18,9 @@ if("error" in d):
     print(r.text)
 if r.status_code==200:
     raw=d["choices"][0]["message"]["content"]
-    l=json.loads(raw.replace("'",'"'))
+    print(type(raw))
+    l=json.loads(raw.replace("'",'"'))##字符串变成了字典
+    print(type(l))
+    print(raw)
     print(l)
     

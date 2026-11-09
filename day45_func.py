@@ -32,4 +32,6 @@ if __name__=="__main__":
      print(clean(" "))
      print(clean(l))
      print(clean(s))
+     with open("result.json","w",encoding="utf-8") as f:
+          json.dump(clean(s),f,ensure_ascii=False,indent=2)
 
