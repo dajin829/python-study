@@ -4,6 +4,8 @@ from config import API_KEY
 with open("dajin.txt","r",encoding="utf-8") as f:
     text=f.read()
 def get_json_from_api(text:str):
+    if text.strip()=="":
+        return None
 
     try:
         r=requests.post(headers={"Authorization":"Bearer "+API_KEY},json={"model":"glm-4-flash","messages":[{"content":'请把下面的内容给做成[{"事情": " ", "时间": " ", "地点": " "}]的数组格式，并且每一个数组只能有一个事件以及其对应的时间的地带你'+text,"role":"user"}],},url="https://open.bigmodel.cn/api/paas/v4/chat/completions",timeout=60)
@@ -24,6 +26,7 @@ def main():
     result=get_json_from_api(text)
     if result:
         print("成功获取到数据并保存到new_all.json")
-
+    if result is None:
+        print("输入文本为空，未进行请求。")
 if __name__ == "__main__":
     main()
