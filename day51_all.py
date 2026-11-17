@@ -8,7 +8,7 @@ def get_json_from_api(text:str):
         return None
 
     try:
-        r=requests.post(headers={"Authorization":"Bearer "+API_KEY},json={"model":"glm-4-flash","messages":[{"content":'请把下面的内容给做成[{"事情": " ", "时间": " ", "地点": " "}]的数组格式，并且每一个数组只能有一个事件以及其对应的时间的地带你'+text,"role":"user"}],},url="https://open.bigmodel.cn/api/paas/v4/chat/completions",timeout=60)
+        r=requests.post(headers={"Authorization":"Bearer "+API_KEY},json={"model":"glm-4-flash","messages":[{"content":'请把下面的内容给做成[{"事情": " ", "时间": " ", "地点": " "}]的数组格式，并且每一个数组只能有一个事件以及其对应的时间的地带你，没有具体事件就返回 []，不要编造'+text,"role":"user"}],},url="https://open.bigmodel.cn/api/paas/v4/chat/completions",timeout=60)
     except Exception as e:
         print(f"出现了问题,现在重新尝试{e}")
         return None
