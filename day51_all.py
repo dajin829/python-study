@@ -31,10 +31,13 @@ def get_json_from_api(text:str):
         json.dump(line,f,ensure_ascii=False,indent=2)
     return line
 def main():
-    result=get_json_from_api(text)
-    if result:
-        print("成功获取到数据并保存到new_all.json")
-    if result is None:
+    if not text.strip():
         print("输入文本为空，未进行请求。")
+    else:
+        result=get_json_from_api(text)
+        if result:
+            print("成功获取到数据并保存到new_all.json")
+        else:
+            print("请求失败，未获取到数据。")
 if __name__ == "__main__":
     main()
