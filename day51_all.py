@@ -22,6 +22,11 @@ def get_json_from_api(text:str):
         return None
     line=d["choices"][0]["message"]["content"]
     line=json.loads(line[line.find("["):line.rfind("]")+1])
+    ok=[]
+    for x in line:
+        if x["事情"].strip():
+            ok.append(x)
+    line=ok
     with open("new_all.json","w",encoding="utf-8") as f:
         json.dump(line,f,ensure_ascii=False,indent=2)
     return line
